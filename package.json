@@ -1,25 +1,6 @@
 {
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "devDependencies": {
-    "@babel/core": "7.9.0",
-    "lerna": "^3.22.0",
-    "prettier": "^2.0.2",
-    "lint-staged": "^10.1.6"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,jsx,less,md,json}": [
-      "prettier --write",
-      "git add"
-    ],
-    "*.ts?(x)": [
-      "prettier --parser=typescript --write",
-      "git add"
-    ]
+    "lerna": "^3.22.0"
   }
 }
